@@ -1,5 +1,7 @@
 #!/bin/bash
 source /cvmfs/grid.cern.ch/etc/profile.d/setup-cvmfs-ui.sh
+export VOMS_USERCONF=`pwd`/etc/grid-security/vomses
+export X509_VOMS_DIR=`pwd`/etc/grid-security/vomsdir
 voms-proxy-init -voms euindia
 sudo yum -y install libtool-ltdl
 export LCG_GFAL_INFOSYS=lcg-bdii.cern.ch:2170

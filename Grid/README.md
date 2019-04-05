@@ -18,7 +18,8 @@ $ WD=$PWD; cd ~/.globus; ./makepems.sh <your-cert>.p12; cd $WD
 # set up the grid UI environment:
 $ sudo yum install libtool-ltdl -y
 $ source /cvmfs/grid.cern.ch/etc/profile.d/setup-cvmfs-ui.sh
-$ export VOMS_USERCONF=$PWD/etc/grid-security/vomses X509_VOMS_DIR=$PWD/etc/grid-security/vomsdir LCG_GFAL_INFOSYS=lcg-bdii.cern.ch:2170
+$ export VOMS_USERCONF=$PWD/etc/grid-security/vomses X509_VOMS_DIR=$PWD/etc/grid-security/vomsdir 
+$ export LCG_GFAL_INFOSYS=lcg-bdii.cern.ch:2170
 $ voms-proxy-init -voms euindia
 #
 # playing with the SE

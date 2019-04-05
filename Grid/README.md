@@ -1,4 +1,5 @@
-Once logged in your CentOS7 Vitual Machine on CloudVeneto.it, follow the instructions below: 
+# Testing lcg-* commands with SRM Storage Elements
+Once logged in your CentOS7 Virtual Machine on CloudVeneto.it, follow the instructions below: 
 ```
 $ sudo ./setup-cvmfs.sh
 $ ./setup-euindia-vo.sh

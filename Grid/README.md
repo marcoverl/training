@@ -13,12 +13,12 @@ $ ./setup-euindia-vo.sh
 # import your credentials:
 $ ./setup-x509.sh
 ## manually copy your x509 personal certificate <your-cert>.p12 in ~/.globus/ and then execute:
-$ WD=`pwd`; cd ~/.globus; ./makepems.sh <your-cert>.p12; cd $WD
+$ WD=$PWD; cd ~/.globus; ./makepems.sh <your-cert>.p12; cd $WD
 #
 # set up the grid UI environment:
+$ sudo yum install libtool-ltdl -y
 $ source /cvmfs/grid.cern.ch/etc/profile.d/setup-cvmfs-ui.sh
-$ export VOMS_USERCONF=`pwd`/etc/grid-security/vomses
-$ export X509_VOMS_DIR=`pwd`/etc/grid-security/vomsdir
+$ export VOMS_USERCONF=$PWD/etc/grid-security/vomses X509_VOMS_DIR=$PWD/etc/grid-security/vomsdir LCG_GFAL_INFOSYS=lcg-bdii.cern.ch:2170
 $ voms-proxy-init -voms euindia
 #
 # playing with the SE

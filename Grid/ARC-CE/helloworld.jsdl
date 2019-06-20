@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JobDefinition
+xmlns="http://schemas.ggf.org/jsdl/2005/11/jsdl"
+xmlns:posix="http://schemas.ggf.org/jsdl/2005/11/jsdl-posix">
+ <JobDescription>
+  <JobIdentification>
+   <JobName>Hello World job</JobName>
+  </JobIdentification>
+  <Application>
+   <posix:POSIXApplication>
+    <posix:Executable>/bin/echo</posix:Executable>
+    <posix:Argument>'Hello World'</posix:Argument>
+    <posix:Output>out.txt</posix:Output>
+    <posix:Error>err.txt</posix:Error>
+   </posix:POSIXApplication>
+  </Application>
+ </JobDescription>
+</JobDefinition>

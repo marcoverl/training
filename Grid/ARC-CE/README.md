@@ -6,6 +6,7 @@ $ yum install nordugrid-arc-client-tools
 ```
 Then for submitting/monitoting/getting output of a job use e.g.:
 ```
+$ arcproxy --voms enmr.eu
 $ arcsub --debug --direct -c arc-6-kit.gridka.de helloworld.jsdl
 $ arcstat -a
 $ arcget <job ID>
